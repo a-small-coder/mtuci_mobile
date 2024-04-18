@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "oleg_dubrovin_bvt2002",
+    "slug": "oleg_dubrovin_bvt2002",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/mainIcon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icons/mainIcon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
