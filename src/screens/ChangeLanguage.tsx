@@ -1,11 +1,11 @@
 import { StyleSheet, View } from "react-native"
 import { theme } from "../theme/constants";
-import { MediumText } from "../components/Text/MediumText";
-import { BaseButton } from "../components/Buttons/BaseButton";
-import { LanguageButton } from "../components/Buttons/LanguageButton";
+import { CommonText } from "../components/Text/CommonText";
+import { BaseButton } from "../components/Buttons/CommonBtn";
+import { LanguageButton } from "../components/Buttons/Language";
 import { BaseText } from "../components/Text/BaseText";
 
-export const LanguageScreen = () => {
+export const ChangeLanguageScreen = () => {
 
     const languages = [
         {
@@ -46,7 +46,7 @@ export const LanguageScreen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <MediumText text={"Language select"}/>
+                <CommonText text={"Language select"}/>
             </View>
             <View style={styles.buttonContainer}>
                 <BaseText text="What is your Mother language?"/>

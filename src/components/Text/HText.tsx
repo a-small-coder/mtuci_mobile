@@ -1,9 +1,9 @@
 import { StyleSheet, Text } from "react-native"
 import { theme } from "../../theme/constants"
-import { MyTextProps } from "./types";
+import { MyTextProps } from "../../types/types";
 
 const styles = StyleSheet.create({
-    heading: {
+    HText: {
         fontStyle: 'normal',
         fontWeight: "600",
         fontSize: 36,
@@ -13,11 +13,11 @@ const styles = StyleSheet.create({
     },
   });
 
-export const Heading = ({text}: MyTextProps) => {
+export const HText = ({text}: MyTextProps) => {
 
     return (
         <Text
-            style={styles.heading}
+            style={styles.HText}
         >
             {text}
         </Text>

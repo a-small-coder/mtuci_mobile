@@ -1,10 +1,10 @@
 import { Pressable, StyleSheet, Text, View } from "react-native"
 import { theme } from "../theme/constants";
-import { MediumText } from "../components/Text/MediumText";
+import { CommonText } from "../components/Text/CommonText";
 import { BaseText } from "../components/Text/BaseText";
-import { RegularText } from "../components/Text/RegularText";
-import { TopUserButton } from "../components/Buttons/TopUserButton";
-import { ExcersiseButton, GameIcon } from "../components/Buttons/ExcersiseButton";
+import { CommonText } from "../components/Text/CommonText";
+import { TopUserButton } from "../components/Cards/UserCard";
+import { ExcersiseButton, GameIcon } from "../components/Cards/ExcersiseCard";
 
 interface gameData {
     text: string
@@ -12,9 +12,7 @@ interface gameData {
     bg: string
 }
 
-export const HomeScreen = () => {
-
-    const name = 'Emil'
+export const StatusScreen = () => {
 
     const title = 'Are you ready for learning today?'
 
@@ -72,7 +70,7 @@ export const HomeScreen = () => {
         <View style={styles.container}>
             <View style={styles.header}>
                 <View style={styles.logo}/>
-                <MediumText text={`Hello ${name}`}/>
+                <CommonText text={`Hello ${name}`}/>
                 <Text style={styles.text}>{title}</Text>
             </View>
             <View style={styles.content}>

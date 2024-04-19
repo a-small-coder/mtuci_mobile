@@ -3,7 +3,7 @@ import { theme } from "../theme/constants";
 import { useState } from "react";
 import { BaseText } from "../components/Text/BaseText";
 import { ThinText } from "../components/Text/ThinText";
-import { BaseButton } from "../components/Buttons/BaseButton";
+import { BaseButton } from "../components/Buttons/CommonBtn";
 
 const MAX_STEP = 2 // from 0 to 2 include both
 
@@ -18,7 +18,7 @@ export const OnBoardingScreen = () => {
         '../../assets/onbording3.png',
     ]
 
-    const headings = [
+    const HTexts = [
         'Confidence in your words',
         'Take your time to learn',
         'The lessons you need to learn',
@@ -76,7 +76,7 @@ export const OnBoardingScreen = () => {
                 </View>
                 <View style={styles.textContainer}>
                     <Text style={{textAlign: 'center'}}>
-                        <BaseText text={headings[slide]}/>
+                        <BaseText text={HTexts[slide]}/>
                     </Text>
                     
                     <ThinText text={text[slide]}/>

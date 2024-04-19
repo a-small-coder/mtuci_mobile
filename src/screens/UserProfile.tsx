@@ -1,14 +1,14 @@
 import { Image, StyleSheet, Text, useColorScheme, View } from "react-native"
 import { theme } from "../theme/constants";
-import { Heading } from "../components/Text/Heading";
-import { RegularText } from "../components/Text/RegularText";
-import { MediumText } from "../components/Text/MediumText";
-import { BaseButton } from "../components/Buttons/BaseButton";
+import { HText } from "../components/Text/HText";
+import { CommonText } from "../components/Text/CommonText";
+import { CommonText } from "../components/Text/CommonText";
+import { BaseButton } from "../components/Buttons/CommonBtn";
 import api, {apiRoutes} from '../api';
 import {navigate} from 'react-native-navigation';
 import { useState } from "react";
 
-export const ProfileScreen = () => {
+export const UserProfileScreen = () => {
 
     const [user, setUser] = useState(null)
     const [error, setError] = useState('')
@@ -36,7 +36,7 @@ export const ProfileScreen = () => {
             
             <View style={styles.header}>
                 <Text style={styles.logo}>👨‍💻</Text>
-                <MediumText text={`Your profile, ${name}`}/>
+                <CommonText text={`Your profile, ${name}`}/>
             </View>
 
             <View style={styles.buttonContainer}>

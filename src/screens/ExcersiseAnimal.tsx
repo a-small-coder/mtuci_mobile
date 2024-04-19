@@ -1,9 +1,9 @@
 import { Image, StyleSheet, Text, TextInput, View } from "react-native"
 import { theme } from "../theme/constants";
-import { MediumText } from "../components/Text/MediumText";
+import { CommonText } from "../components/Text/CommonText";
 import { useEffect, useState } from "react";
 import { ThinText } from "../components/Text/ThinText";
-import { BaseButton } from "../components/Buttons/BaseButton";
+import { BaseButton } from "../components/Buttons/CommonBtn";
 import { BaseText } from "../components/Text/BaseText";
 import api, {apiRoutes} from '../api';
 import {navigate} from 'react-native-navigation';
@@ -100,7 +100,7 @@ export const AnimalsScreen = () => {
     return (
         <View style={styles.container}>
             <View style={{...styles.header, backgroundColor: headerBg}}>
-                <MediumText text={'< Guess the animal'}/>
+                <CommonText text={'< Guess the animal'}/>
             </View>
             <Text style={{textAlign: 'center', fontSize: 16, color: theme.colors.red}}>
                 {error}

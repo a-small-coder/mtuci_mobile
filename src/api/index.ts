@@ -3,6 +3,8 @@ import axios from 'axios';
 
 export const api = axios.createApi({
     'https://cdn.dummyjson.com/'
+}, {
+    
 })
 
 export const apiRoutes = {

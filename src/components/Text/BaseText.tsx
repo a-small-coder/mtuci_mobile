@@ -1,6 +1,6 @@
 import { StyleSheet, Text } from "react-native"
 import { theme } from "../../theme/constants"
-import { MyTextProps } from "./types";
+import { MyTextProps } from "../../types/types";
 
 const styles = StyleSheet.create({
     baseText: {

@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet } from "react-native"
-import { MediumText } from "../Text/MediumText"
+import { CommonText } from "../Text/CommonText"
 import { theme } from "../../theme/constants"
 
 interface BaseButtonProps {
@@ -22,7 +22,7 @@ export const BaseButton = ({
             onPress={onClick}
             disabled={disabled}
         >
-            <MediumText text={text}/>
+            <CommonText text={text}/>
          </Pressable>
     )
 }

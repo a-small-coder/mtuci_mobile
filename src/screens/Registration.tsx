@@ -1,13 +1,13 @@
 import { Image, StyleSheet, Text, TextInput, View } from "react-native"
 import { theme } from "../theme/constants"
 import { useState } from "react";
-import { MediumText } from "../components/Text/MediumText";
+import { CommonText } from "../components/Text/CommonText";
 import { BaseText } from "../components/Text/BaseText";
-import { BaseButton } from "../components/Buttons/BaseButton";
+import { BaseButton } from "../components/Buttons/CommonBtn";
 import api, {apiRoutes} from '../api';
 import {navigate} from 'react-native-navigation';
 
-export const RegistrationScreen = () => {
+export const AuthRegistrationScreen = () => {
     const [firstName, setFirstName] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -123,7 +123,7 @@ export const RegistrationScreen = () => {
     return (
         <View style={styles.container}>
             <View style={{...styles.header}}>
-                <MediumText text={'< Signup'}/>
+                <CommonText text={'< Signup'}/>
             </View>
             {getStep()}
         </View>

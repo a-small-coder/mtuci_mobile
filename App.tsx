@@ -1,13 +1,13 @@
 import { useColorScheme, View } from 'react-native';
-import { OnBoardingScreen } from './src/screens/Onboarding';
-import { ProfileScreen } from './src/screens/Profile';
-import { LanguageScreen } from './src/screens/Language';
-import { HomeScreen } from './src/screens/Home';
-import { AnimalsScreen } from './src/screens/Animals';
-import { WordPracticeScreen } from './src/screens/WordPractice';
-import { ListeningScreen } from './src/screens/Listening';
-import { LoginScreen } from './src/screens/Login';
-import { RegistrationScreen } from './src/screens/Register';
+import { OnBoardingScreen } from './src/screens/FirstScreen';
+import { ProfileScreen } from './src/screens/UserProfile';
+import { LanguageScreen } from './src/screens/ChangeLanguage';
+import { HomeScreen } from './src/screens/Status';
+import { AnimalsScreen } from './src/screens/ExcersiseAnimal';
+import { WordPracticeScreen } from './src/screens/ExcersiseWordPractice';
+import { ListeningScreen } from './src/screens/ExcersiseListening';
+import { LoginScreen } from './src/screens/Auth';
+import { RegistrationScreen } from './src/screens/Registration';
 import { Routing, Route } from 'react-native-navigation';
 
 export default function App() {

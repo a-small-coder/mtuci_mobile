@@ -1,13 +1,13 @@
 import { Image, StyleSheet, View } from "react-native"
 import { theme } from "../theme/constants";
-import { Heading } from "../components/Text/Heading";
+import { HText } from "../components/Text/HText";
 
-export const SplashScreen = () => {
+export const LoadingScreen = () => {
 
     return (
         <View style={styles.container}>
             <Image source={require('../../assets/icons/mainIcon.png')}/>
-            <Heading text={'Language App'}/>
+            <HText text={'Language App'}/>
         </View>
     )
 }
@@ -19,5 +19,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         gap: 30,
+        backgroundColor: theme.colors.deepBlue
     },
   });
