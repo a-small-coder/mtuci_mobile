@@ -4,7 +4,9 @@ import axios from 'axios';
 export const api = axios.createApi({
     'https://cdn.dummyjson.com/'
 }, {
-    
+    headers: {
+        auth: 'Barier EgZjaHJvbWUyBggAEEUYOdIBCjM5NzUwNmowajeoAgCw'
+    }
 })
 
 export const apiRoutes = {
